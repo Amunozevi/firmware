@@ -1,0 +1,57 @@
+************************************
+
+LSI Corp. MegaRAID Firmware Release 
+
+************************************
+
+Release date: 07/26/10
+
+====================== 
+Supported Controllers:
+======================
+
+MegaRAID SAS 9260-4i
+MegaRAID SAS 9260-8i
+MegaRAID SAS 9260DE-8i
+MegaRAID SAS 9261-8i
+MegaRAID SAS 9280-4i4e
+MegaRAID SAS 9280-8e
+MegaRAID SAS 9280DE-8e
+
+
+Component:
+=========
+SAS MegaRAID Firmware Release for MegaRAID Controllers
+Release date: 07/26/10
+
+
+Version Numbers:	
+===============
+Current Firmware Package:  12.9.0-0037 
+Current Package Details:   
+APP-2.90.03-0933_BB-2.02.00.00-0000_BIOS-3.18.00_4.09.05.00_0x0416A000_WEBBIOS-6.0-18-e_13-Rel_PCLI-04.04-01000008_BOOT-01.250.04.219_NVDATA-2.06.03-0010_2010_07_09  
+			     
+Previous Firmware Package:  12.9.0-0033  
+Previous Package Details:   
+APP-2.90.03-0928_BB-2.02.00.00-0000_BIOS-3.17.00_4.08.04.00_0x0416A000_WEBBIOS-6.0-18-e_13-Rel_PCLI-04.04-01000008_BOOT-01.250.04.219_NVDATA-2.06.03-0009_2010_06_25   
+			      
+
+Bug Fixes and Enhancements:
+===========================
+Firmware:
+LSIP200077495  	(DFCT)  (6955672) (RW LSIP200073892) VPD should contain VD Vendor Spec field for Battery type BBU07/BBU08
+LSIP200082047 	(DFCT) 	LDBBM entries getting corrupted after import from MR to iMR.
+
+BIOS:
+LSIP200070820 (DFCT) WebBIOS fails to launch in some servers
+
+
+Installation:
+=============
+Use MegaCLI to flash the SAS controllers.  The DOS version of MegaCLI is included
+in the zip file.  Windows and Linux MegaCLI can be downloaded from the download
+section of www.lsi.com.
+
+Command syntax:  MegaCli -adpfwflash -f mr2108fw.rom -a0
+
+
